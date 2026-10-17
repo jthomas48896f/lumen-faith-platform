@@ -7,8 +7,8 @@ Catechism), public domain, Project Gutenberg ebook 14552:
 https://www.gutenberg.org/cache/epub/14552/pg14552.txt
 
 The corpus is a deliberately small selection of lessons (the end of
-man, the sacraments in general, Baptism, Penance, the Holy Eucharist,
-prayer), 41 questions in total.
+man, the sacraments in general, Baptism, Confirmation, Penance, the
+Holy Eucharist, prayer), 51 questions in total.
 
 Two questions are excluded on purpose, and the exclusion is part of
 the design record: Q. 241 and Q. 242 quote the words of consecration
@@ -17,6 +17,15 @@ refuser (src/refuser.ts) hard rejects that shape before rendering, by
 design, so a verbatim answer to those two questions could never be
 served. Rather than weaken the refuser, the demo corpus omits them.
 See demo/README.md, "Known tensions".
+
+Lesson Fifteenth, On Confirmation (Q. 166 to Q. 175), was added on
+2026-10-17. Every one of its ten answers was checked against the
+output refuser before it was added, in the same way as the rest of
+the corpus: none tripped it, so this lesson has no exclusions. In
+particular Q. 170, which quotes the words the bishop says in
+anointing, was checked and returned no refusal; its answer quotes
+the Confirmation form, not the words of absolution, consecration,
+or ordination that the refuser rejects by shape.
 
 Usage: python build_corpus.py <path-to-pg14552.txt> [out.json]
 """
@@ -30,6 +39,7 @@ SELECTED = (
     list(range(1, 12))          # Lesson First: the end of man
     + list(range(136, 142))     # the sacraments in general
     + list(range(152, 158))     # Baptism
+    + list(range(166, 176))     # Confirmation
     + list(range(187, 191))     # Penance
     + [238, 239, 240]           # the Holy Eucharist (241, 242 excluded, see above)
     + list(range(243, 249))
@@ -40,6 +50,7 @@ LESSONS = [
     (1, 11, "On the End of Man"),
     (136, 141, "On the Sacraments in General"),
     (152, 157, "On Baptism"),
+    (166, 175, "On Confirmation"),
     (187, 190, "On the Sacrament of Penance"),
     (238, 248, "On the Holy Eucharist"),
     (303, 307, "On Prayer"),
@@ -57,7 +68,10 @@ def main():
     raw = Path(sys.argv[1]).read_text(encoding="utf-8")
     start = raw.index("LESSON FIRST")
     body = raw[start:]
-    pattern = re.compile(r"(\d+)\.\s+Q\.\s+(.*?)\nA\.\s+(.*?)(?=\n\d+\.\s+Q\.|\Z)",
+    # The lookahead also stops at a LESSON heading, so the last
+    # question of a complete lesson (Q. 175 here) does not swallow
+    # the next lesson's heading into its answer.
+    pattern = re.compile(r"(\d+)\.\s+Q\.\s+(.*?)\nA\.\s+(.*?)(?=\n\d+\.\s+Q\.|\nLESSON\s|\Z)",
                          re.DOTALL)
     passages = []
     for match in pattern.finditer(body):

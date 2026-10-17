@@ -1,7 +1,7 @@
 {
   "corpus": "Baltimore Catechism No. 2, selected lessons (public domain)",
   "source_url": "https://www.gutenberg.org/cache/epub/14552/pg14552.txt",
-  "passage_count": 41,
+  "passage_count": 51,
   "excluded": [
     {
       "id": "BC2 Q.241",
@@ -195,6 +195,86 @@
       "lesson": "On Baptism",
       "question": "How many kinds of Baptism are there?",
       "answer": "There are three kinds of Baptism: Baptism of water, of desire, and of blood.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.166",
+      "question_number": 166,
+      "lesson": "On Confirmation",
+      "question": "What is Confirmation?",
+      "answer": "Confirmation is a Sacrament through which we receive the Holy Ghost to make us strong and perfect Christians and soldiers of Jesus Christ.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.167",
+      "question_number": 167,
+      "lesson": "On Confirmation",
+      "question": "Who administers Confirmation?",
+      "answer": "The bishop is the ordinary minister of Confirmation.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.168",
+      "question_number": 168,
+      "lesson": "On Confirmation",
+      "question": "How does the bishop give Confirmation?",
+      "answer": "The bishop extends his hands over those who are to be confirmed, prays that they may receive the Holy Ghost, and anoints the forehead of each with holy chrism in the form of a cross.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.169",
+      "question_number": 169,
+      "lesson": "On Confirmation",
+      "question": "What is holy chrism?",
+      "answer": "Holy chrism is a mixture of olive-oil and balm, consecrated by the bishop.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.170",
+      "question_number": 170,
+      "lesson": "On Confirmation",
+      "question": "What does the bishop say in anointing the person he confirms?",
+      "answer": "In anointing the person he confirms the bishop says: I sign thee with the sign of the cross, and I confirm thee with the chrism of salvation, in the name of the Father, and of the Son, and of the Holy Ghost.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.171",
+      "question_number": 171,
+      "lesson": "On Confirmation",
+      "question": "What is meant by anointing the forehead with chrism in the form of a cross?",
+      "answer": "By anointing the forehead with chrism in the form of a cross is meant, that the Christian who is confirmed must openly profess and practice his faith, never be ashamed of it, and rather die than deny it.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.172",
+      "question_number": 172,
+      "lesson": "On Confirmation",
+      "question": "Why does the bishop give the person he confirms a slight blow on the cheek?",
+      "answer": "The bishop gives the person he confirms a slight blow on the cheek, to put him in mind that he must be ready to suffer everything, even death, for the sake of Christ.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.173",
+      "question_number": 173,
+      "lesson": "On Confirmation",
+      "question": "To receive Confirmation worthily is it necessary to be in the state of grace?",
+      "answer": "To receive Confirmation worthily it is necessary to be in the state of grace.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.174",
+      "question_number": 174,
+      "lesson": "On Confirmation",
+      "question": "What special preparation should be made to receive Confirmation?",
+      "answer": "Persons of an age to learn should know the chief mysteries of faith and the duties of a Christian, and be instructed in the nature and effects of this Sacrament.",
+      "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
+    },
+    {
+      "id": "BC2 Q.175",
+      "question_number": 175,
+      "lesson": "On Confirmation",
+      "question": "Is it a sin to neglect Confirmation?",
+      "answer": "It is a sin to neglect Confirmation, especially in these evil days when faith and morals are exposed to so many and such violent temptations.",
       "source": "Baltimore Catechism No. 2 (Project Gutenberg 14552)"
     },
     {
